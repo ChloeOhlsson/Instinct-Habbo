@@ -1,0 +1,46 @@
+.home-profile {
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    .home-profile-hotel {
+        height: 143px;
+
+        background: url(../images/hotel.png);
+    }
+
+    .home-profile-actions {
+        background: #7B7B71;
+
+        height: 66px;
+    }
+
+    .home-profile-section {
+        background: #A0A097;
+
+        box-sizing: border-box;
+
+        padding: 8px 12px;
+
+        display: grid;
+
+        grid-template-columns: 48px auto;
+        grid-gap: 12px;
+
+        .home-profile-section-icon {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .home-profile-section-content {
+            padding: 6px 0;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px dotted #7B7B73;
+        }
+    }
+}
