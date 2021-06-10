@@ -37,6 +37,10 @@
 
         .home-profile-section-content {
             padding: 6px 0;
+
+            .button {
+                margin-top: 4px;
+            }
         }
 
         &:not(:last-child) {
