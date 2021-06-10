@@ -40,7 +40,8 @@ ul {
 main {
     display: grid;
 
-    grid-template-columns: 60% 40%;
+    grid-gap: 12px;
+    grid-template-columns: auto 40%;
 
     section {
         margin-top: 12px;
@@ -56,3 +57,4 @@ a {
 @import "Global/Inputs";
 
 @import "Home/Profile";
+@import "Home/News";

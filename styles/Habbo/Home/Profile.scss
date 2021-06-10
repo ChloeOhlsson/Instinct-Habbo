@@ -24,9 +24,9 @@
 
         grid-template-areas:
             "plate motto"
-            "links links";
+            "empty links";
         
-        grid-row-gap: 8px;
+        grid-row-gap: 7px;
         grid-column-gap: 18px;
         grid-template-columns: 94px auto;
         grid-template-rows: 50%;
@@ -90,6 +90,14 @@
 
             display: grid;
             grid-auto-flow: column;
+
+            :first-child {
+                text-align: left;
+            }
+
+            :last-child {
+                text-align: right;
+            }
 
             text-align: center;
 

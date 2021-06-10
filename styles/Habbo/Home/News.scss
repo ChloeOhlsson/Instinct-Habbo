@@ -1,0 +1,43 @@
+.home-news {
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    background: #FFF;
+
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-bottom-width: 2px;
+
+    .home-news-thumbnail {
+        width: 100%;
+        height: 187px;
+
+        background: #000;
+
+        overflow: hidden;
+
+        .home-news-thumbnail-image {
+            overflow: hidden;
+        }
+    }
+
+    .home-news-list {
+        .home-news-item {
+            padding: 8px 12px;
+
+            .home-news-item-date {
+                color: #888;
+            }
+
+            &:nth-child(even) {
+                background: #ECECEC;
+            }
+        }
+    }
+
+    .home-news-more {
+        padding: 8px 12px;
+
+        float: right;
+    }
+}
