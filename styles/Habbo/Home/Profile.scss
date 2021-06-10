@@ -24,15 +24,17 @@
 
         display: grid;
 
-        grid-template-columns: 48px auto;
+        grid-template-columns: 36px auto;
         grid-gap: 12px;
 
         position: relative;
 
         .home-profile-section-icon {
-            text-align: center;
+            display: flex;
 
             img {
+                margin: auto;
+
                 max-width: 100%;
             }
         }
