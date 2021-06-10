@@ -1,6 +1,8 @@
 header {
     width: 100%;
     height: 100px;
+    
+    margin-bottom: 30px;
 
     background: $header-background;
 
@@ -11,6 +13,10 @@ header {
     display: grid;
 
     grid-template-rows: auto 28px;
+
+    .container {
+        height: 100%;
+    }
     
     .header-content {
         height: 100%;

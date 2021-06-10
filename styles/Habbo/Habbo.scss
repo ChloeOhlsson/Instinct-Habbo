@@ -26,11 +26,9 @@ ul {
     }
 }
 
-main, .container {
+.container {
     width: 75%;
     max-width: 1000px;
-
-    height: inherit;
 
     margin: 0 auto;
 
@@ -38,8 +36,6 @@ main, .container {
 }
 
 main {
-    margin-top: 30px;
-
     display: grid;
 
     grid-template-columns: 60% 40%;
