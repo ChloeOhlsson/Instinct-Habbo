@@ -12,7 +12,103 @@
     .home-profile-actions {
         background: #7B7B71;
 
+        box-sizing: border-box;
+
+        padding: 8px 18px;
+
         height: 66px;
+
+        position: relative;
+
+        display: grid;
+
+        grid-template-areas:
+            "plate motto"
+            "links links";
+        
+        grid-row-gap: 8px;
+        grid-column-gap: 18px;
+        grid-template-columns: 94px auto;
+        grid-template-rows: 50%;
+
+        .home-profile-plate {
+            grid-area: plate;
+
+            width: 94px;
+            height: 59px;
+
+            background: url(../images/plate.png);
+
+            position: relative;
+
+            bottom: 24px;
+
+            img {
+                position: absolute;
+
+                left: 12px;
+                bottom: 28px;
+            }
+        }
+
+        .home-profile-motto {
+            grid-area: motto;
+
+            height: 22px;
+
+            background: #FFF;
+
+            border-radius: 6px;
+
+            box-shadow: 1px 2px 0 1px rgba(0, 0, 0, .25);
+
+            display: grid;
+
+            grid-gap: 6px;
+
+            grid-template-columns: max-content auto;
+            grid-template-areas: "name motto";
+
+            box-sizing: border-box;
+
+            padding: 4px 12px;
+
+            .home-profile-motto-name {
+                grid-area: name;
+
+                font-weight: bold;
+            }
+
+            input {
+                height: 12px;
+            }
+        }
+
+        .home-profile-links {
+            grid-area: links;
+
+
+            display: grid;
+            grid-auto-flow: column;
+
+            text-align: center;
+
+            img {
+                position: relative;
+
+                top: 1px;
+            }
+
+            a {
+                color: #FFF;
+
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
     .home-profile-section {

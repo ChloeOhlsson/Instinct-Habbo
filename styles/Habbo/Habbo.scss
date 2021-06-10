@@ -11,7 +11,7 @@ body {
 
     background: $background url(../images/background.png) center;
 
-    font-size: 11px;
+    font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     overflow: overlay;
@@ -47,7 +47,12 @@ main {
     }
 }
 
+a {
+    color: #FC6204;
+}
+
 @import "Global/Header";
 @import "Global/Buttons";
+@import "Global/Inputs";
 
 @import "Home/Profile";
